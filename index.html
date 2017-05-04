@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>mousegame</title>
+</head>
+
+<body>
+    <div id="carre"> </div>
+    <script>
+        //afficher position souris
+        document.body.addEventListener("mousemove", function showCoords(event) {
+            let x = event.screenX;
+            let y = event.screenY;
+            let coords = "X coords: " + x + " , Y coords: " + y;
+            console.log(x + " " + y);
+            // faire bouger carre
+            let element = document.getElementById('carre');
+            // .style signifie modification du css 
+            element.style.position = 'absolute';
+
+            element.style.left = x + 'px';
+
+            element.style.top = y + 'px';
+
+
+        });
+    </script>
+</body>
+
+</html>

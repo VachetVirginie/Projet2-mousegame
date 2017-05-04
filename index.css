@@ -1,0 +1,11 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #069;
+}
+
+body {
+    /* mettre à 100% de l'écran */
+    width: 100vw;
+    height: 100vh;
+}
